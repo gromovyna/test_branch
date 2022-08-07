@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        form {
+            background-color: rgb(230, 190, 255);
+            padding: 50px 20px;
+        }
+        select, input {
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            padding: 0 10px;
+            margin-right: 20px;
+        }
+        .button {
+            background-color: rgb(115, 88, 107);
+            color: white;
+            margin-left: 50px;
+        }
+        table, td {
+            border: 1px solid black;
+        }
+    </style>
+    <title>Calendar</title>
+</head>
+<body>
+    <form class="10" id="form">
+        <label>
+            Meeting title
+            <input type="text" id="meeting" placeholder="Adventure" required>
+        </label>
+        <label>
+            Meeting room
+            <select id="room"></select>
+        </label>
+        <label>
+            Day
+            <select id="day"></select>
+        </label>
+        <label>
+            Time
+            <select id="time"></select>
+        </label>
+        <label>
+            Participants
+            <select id="participants"></select>
+        </label>
+        <input class="button" type="submit" value="Add meet" id="button">
+    </form>
+
+    <div id="wrapp"></div>
+    <script src="script.js"></script>
+</body>
+</html>
